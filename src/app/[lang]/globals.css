@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-ink: #06060b;
+  --color-surface: #0e0e17;
+  --color-surface-2: #151522;
+  --color-line: #23233a;
+  --color-muted: #9a9ab3;
+  --color-fg: #ececf4;
+  --color-accent: #8b5cf6;
+  --color-accent-2: #22d3ee;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-ink text-fg font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-accent/40 text-white;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-2;
+  }
+}
+
+@utility text-gradient {
+  @apply bg-linear-to-r from-accent via-fuchsia-400 to-accent-2 bg-clip-text text-transparent;
+}
+
+@utility card {
+  @apply rounded-2xl border border-line bg-surface/70 backdrop-blur-sm;
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at top, black 30%, transparent 75%);
+}
+
+/* Scroll-driven reveal: pure CSS, no JS. Only applied where supported and motion is welcome. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+  .fade-up {
+    animation: reveal 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-8px);
+  }
+}
