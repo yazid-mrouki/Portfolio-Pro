@@ -17,7 +17,7 @@ export const en: Content = {
   },
   hero: {
     available: "Open to internships & opportunities",
-    location: "Bardo, Tunisia",
+    location: "Bardo, Tunisia · Open to international opportunities",
     role: "Cloud Engineer & Full-Stack Developer",
     pitch:
       "I build private cloud infrastructure (OpenStack, Kubernetes) and the web applications that run on it, from the interface design to the container in production.",
@@ -466,8 +466,8 @@ export const en: Content = {
     langTitle: "Languages",
     langs: [
       { name: "Arabic", level: "Native", value: 100 },
-      { name: "French", level: "B2", value: 75 },
-      { name: "English", level: "B2 — Tandem", value: 75 },
+      { name: "French", level: "C1", value: 88 },
+      { name: "English", level: "C1", value: 88 },
       { name: "German", level: "A2 — Goethe", value: 35 },
     ],
     interestsTitle: "Interests",

@@ -17,7 +17,7 @@ export const fr: Content = {
   },
   hero: {
     available: "Ouvert aux stages & opportunités",
-    location: "Bardo, Tunisie",
+    location: "Bardo, Tunisie · Disponible à l'international",
     role: "Ingénieur Cloud & Développeur Full-Stack",
     pitch:
       "Je conçois des infrastructures cloud privées (OpenStack, Kubernetes) et je développe les applications web qui tournent dessus — du design de l'interface jusqu'au conteneur en production.",
@@ -475,8 +475,8 @@ export const fr: Content = {
     langTitle: "Langues",
     langs: [
       { name: "Arabe", level: "Langue maternelle", value: 100 },
-      { name: "Français", level: "B2", value: 75 },
-      { name: "Anglais", level: "B2 — Tandem", value: 75 },
+      { name: "Français", level: "C1", value: 88 },
+      { name: "Anglais", level: "C1", value: 88 },
       { name: "Allemand", level: "A2 — Goethe", value: 35 },
     ],
     interestsTitle: "Centres d'intérêt",
