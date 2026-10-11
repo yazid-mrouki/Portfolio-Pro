@@ -27,7 +27,7 @@ export const fr: Content = {
       { value: "5", label: "stages en entreprise" },
       { value: "10+", label: "projets réalisés" },
       { value: "6", label: "certifications" },
-      { value: "2028", label: "diplôme d'ingénieur" },
+      { value: "2027", label: "diplôme d'ingénieur" },
     ],
   },
   about: {
@@ -451,7 +451,7 @@ export const fr: Content = {
       {
         degree: "Cycle Ingénieur — Cloud & Systèmes d'Information",
         school: "ESPRIT",
-        period: "2024 – 2028",
+        period: "2024 – 2027",
         place: "Ariana",
       },
       {

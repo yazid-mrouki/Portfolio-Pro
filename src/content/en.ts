@@ -27,7 +27,7 @@ export const en: Content = {
       { value: "5", label: "industry internships" },
       { value: "10+", label: "projects shipped" },
       { value: "6", label: "certifications" },
-      { value: "2028", label: "engineering degree" },
+      { value: "2027", label: "engineering degree" },
     ],
   },
   about: {
@@ -447,7 +447,7 @@ export const en: Content = {
       {
         degree: "Engineering degree — Cloud & Information Systems",
         school: "ESPRIT",
-        period: "2024 – 2028",
+        period: "2024 – 2027",
         place: "Ariana",
       },
       { degree: "Bachelor's in Computer Science", school: "ISET Radès", period: "2021 – 2024", place: "Radès" },
